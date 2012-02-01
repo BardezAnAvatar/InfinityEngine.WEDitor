@@ -1,5 +1,5 @@
 VERSION 5.00
-Begin VB.Form Form2 
+Begin VB.Form frmAbout 
    Caption         =   "About"
    ClientHeight    =   6375
    ClientLeft      =   60
@@ -9,7 +9,7 @@ Begin VB.Form Form2
    LinkTopic       =   "Form2"
    ScaleHeight     =   6375
    ScaleWidth      =   5370
-   StartUpPosition =   3  'Windows Default
+   StartUpPosition =   1  'CenterOwner
    Begin VB.CommandButton Command1 
       Caption         =   "OK"
       Height          =   495
@@ -70,7 +70,7 @@ Begin VB.Form Form2
       Left            =   2475
       TabIndex        =   3
       Top             =   960
-      Width           =   1215
+      Width           =   1325
    End
    Begin VB.Label Label2 
       Alignment       =   2  'Center
@@ -109,7 +109,7 @@ Begin VB.Form Form2
       Width           =   5175
    End
 End
-Attribute VB_Name = "Form2"
+Attribute VB_Name = "frmAbout"
 Attribute VB_GlobalNameSpace = False
 Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True

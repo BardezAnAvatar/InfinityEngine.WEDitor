@@ -9,36 +9,7 @@ Public bytArrOverlay2() As Byte
 Public bytArrOverlay3() As Byte
 Public bytArrOverlay4() As Byte
 Public bytArrOverlay5() As Byte
-Public bytArrDoor01() As Byte
-Public bytArrDoor02() As Byte
-Public bytArrDoor03() As Byte
-Public bytArrDoor04() As Byte
-Public bytArrDoor05() As Byte
-Public bytArrDoor06() As Byte
-Public bytArrDoor07() As Byte
-Public bytArrDoor08() As Byte
-Public bytArrDoor09() As Byte
-Public bytArrDoor10() As Byte
-Public bytArrDoor11() As Byte
-Public bytArrDoor12() As Byte
-Public bytArrDoor13() As Byte
-Public bytArrDoor14() As Byte
-Public bytArrDoor15() As Byte
-Public bytArrDoor16() As Byte
-Public bytArrDoor17() As Byte
-Public bytArrDoor18() As Byte
-Public bytArrDoor19() As Byte
-Public bytArrDoor20() As Byte
-Public bytArrDoor21() As Byte
-Public bytArrDoor22() As Byte
-Public bytArrDoor23() As Byte
-Public bytArrDoor24() As Byte
-Public bytArrDoor25() As Byte
-Public bytArrDoor26() As Byte
-Public bytArrDoor27() As Byte
-Public bytArrDoor28() As Byte
-Public bytArrDoor29() As Byte
-Public bytArrDoor30() As Byte
+Public bytArrDoors() As Byte
 Public bytArrTileMap1() As Byte
 Public bytArrTileMap2() As Byte
 Public bytArrTileMap3() As Byte
@@ -67,14 +38,16 @@ Public lngStartTileIndiciesOverlay4 As Long
 Public lngStartTileIndiciesOverlay5 As Long
 Public lngLengthDoorTileCellIndicies As Long
 Public lngLengthWallGroups As Long
+Public lngNumWallGroups As Long
 Public bytArrWallGroups() As Byte
 Public lngLengthPolygons As Long
 Public bytArrPolygons() As Byte
+Public lngNumPolygonIndicies As Long
 Public lngLengthPolygonIndicies As Long
 Public bytArrPolygonIndicies() As Byte
 Public lngLengthVerticies As Long
+Public lngNumVerticies As Long
 Public bytArrVerticies() As Byte
-Public lngEOF As Long
 Public lngLengthTilemapOverlay1 As Long
 Public lngLengthTilemapOverlay2 As Long
 Public lngLengthTilemapOverlay3 As Long
@@ -85,6 +58,17 @@ Public lngLengthTileIndeciesOverlay2 As Long
 Public lngLengthTileIndeciesOverlay3 As Long
 Public lngLengthTileIndeciesOverlay4 As Long
 Public lngLengthTileIndeciesOverlay5 As Long
+Public bytOpenDoorPolygons() As Byte
+Public bytClosedDoorPolygons() As Byte
+Public lngStartOpenDoorPolygons() As Long
+Public lngStartClosedDoorPolygons() As Long
+Public lngNumOpenDoorPolygons() As Long
+Public lngNumClosedDoorPolygons() As Long
+Public lngLengthOpenDoorPolygons As Long
+Public lngLengthClosedDoorPolygons As Long
+Public boolOpenOrClosed As Boolean
+Public intNumActiveOverlays As Integer
+
 
 Public strWedLocation As String
 Public TempBytArr() As Byte
@@ -100,3 +84,5 @@ Public lngAddToOffsets As Long
 
 Public strNewWedLocation As String
 
+Public lngAreaTileWidth As Long
+Public lngAreaTileHeight As Long
