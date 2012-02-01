@@ -3,32 +3,32 @@ Object = "{F9043C88-F6F2-101A-A3C9-08002B2F49FB}#1.2#0"; "COMDLG32.OCX"
 Object = "{BDC217C8-ED16-11CD-956C-0000C04E4C0A}#1.1#0"; "tabctl32.ocx"
 Begin VB.Form frmWEDitorMain 
    Caption         =   "WEDitor - The Infinity Engine WED Editor Version 1.0.1"
-   ClientHeight    =   11085
+   ClientHeight    =   8760
    ClientLeft      =   3090
    ClientTop       =   2730
-   ClientWidth     =   13095
+   ClientWidth     =   7815
    Icon            =   "Form1.frx":0000
    LinkTopic       =   "Form1"
-   ScaleHeight     =   11085
-   ScaleWidth      =   13095
+   ScaleHeight     =   8760
+   ScaleWidth      =   7815
    StartUpPosition =   1  'CenterOwner
    Begin TabDlg.SSTab SSTab1 
       Height          =   8535
       Left            =   0
       TabIndex        =   16
       Top             =   0
-      Width           =   10215
-      _ExtentX        =   18018
+      Width           =   5895
+      _ExtentX        =   10398
       _ExtentY        =   15055
       _Version        =   393216
       Style           =   1
-      MousePointer    =   2
       Tabs            =   10
-      Tab             =   9
+      TabsPerRow      =   5
       TabHeight       =   520
+      ShowFocusRect   =   0   'False
       TabCaption(0)   =   "Tilemap"
       TabPicture(0)   =   "Form1.frx":324A
-      Tab(0).ControlEnabled=   0   'False
+      Tab(0).ControlEnabled=   -1  'True
       Tab(0).Control(0)=   "fraTilemap"
       Tab(0).Control(0).Enabled=   0   'False
       Tab(0).ControlCount=   1
@@ -36,31 +36,26 @@ Begin VB.Form frmWEDitorMain
       TabPicture(1)   =   "Form1.frx":3266
       Tab(1).ControlEnabled=   0   'False
       Tab(1).Control(0)=   "fraDoorTileIndicies"
-      Tab(1).Control(0).Enabled=   0   'False
       Tab(1).ControlCount=   1
       TabCaption(2)   =   "Tilemap Indicies"
       TabPicture(2)   =   "Form1.frx":3282
       Tab(2).ControlEnabled=   0   'False
       Tab(2).Control(0)=   "fraTilemapIndicies"
-      Tab(2).Control(0).Enabled=   0   'False
       Tab(2).ControlCount=   1
       TabCaption(3)   =   "Overlays"
       TabPicture(3)   =   "Form1.frx":329E
       Tab(3).ControlEnabled=   0   'False
       Tab(3).Control(0)=   "fraOverlays"
-      Tab(3).Control(0).Enabled=   0   'False
       Tab(3).ControlCount=   1
       TabCaption(4)   =   "Doors"
       TabPicture(4)   =   "Form1.frx":32BA
       Tab(4).ControlEnabled=   0   'False
       Tab(4).Control(0)=   "fraDoors"
-      Tab(4).Control(0).Enabled=   0   'False
       Tab(4).ControlCount=   1
       TabCaption(5)   =   "Verticies"
       TabPicture(5)   =   "Form1.frx":32D6
       Tab(5).ControlEnabled=   0   'False
       Tab(5).Control(0)=   "fraVerticies"
-      Tab(5).Control(0).Enabled=   0   'False
       Tab(5).ControlCount=   1
       TabCaption(6)   =   "Polygons"
       TabPicture(6)   =   "Form1.frx":32F2
@@ -79,69 +74,68 @@ Begin VB.Form frmWEDitorMain
       Tab(8).ControlCount=   1
       TabCaption(9)   =   "Door Polygons"
       TabPicture(9)   =   "Form1.frx":3346
-      Tab(9).ControlEnabled=   -1  'True
+      Tab(9).ControlEnabled=   0   'False
       Tab(9).Control(0)=   "fraDoorPolygons"
-      Tab(9).Control(0).Enabled=   0   'False
       Tab(9).ControlCount=   1
       Begin VB.Frame fraDoorPolygons 
-         Height          =   6015
-         Left            =   240
+         Height          =   4815
+         Left            =   -74880
          TabIndex        =   125
-         Top             =   1200
+         Top             =   720
          Visible         =   0   'False
-         Width           =   6135
+         Width           =   4215
          Begin VB.CommandButton cmdAddDoorPolygon 
             Caption         =   "Add Door Polygon"
             Height          =   495
-            Left            =   2760
+            Left            =   2520
             TabIndex        =   138
-            Top             =   3720
+            Top             =   3240
             Width           =   1335
          End
          Begin VB.CommandButton cmdDeleteDoorPolygon 
             BackColor       =   &H000080FF&
             Caption         =   "Delete Door Polygon (DISABLED)"
             Height          =   735
-            Left            =   2760
+            Left            =   2520
             Style           =   1  'Graphical
             TabIndex        =   137
-            Top             =   4320
+            Top             =   3840
             Width           =   1335
          End
          Begin VB.CommandButton cmdUpdateDoorPolygon 
             Caption         =   "Update"
             Height          =   255
-            Left            =   3075
+            Left            =   2835
             TabIndex        =   136
-            Top             =   3360
+            Top             =   2880
             Width           =   735
          End
          Begin VB.TextBox txtMaxDoorY 
             Height          =   285
-            Left            =   2955
+            Left            =   2715
             TabIndex        =   135
-            Top             =   2880
+            Top             =   2400
             Width           =   975
          End
          Begin VB.TextBox txtMinDoorY 
             Height          =   285
-            Left            =   2955
+            Left            =   2715
             TabIndex        =   134
-            Top             =   2280
+            Top             =   1800
             Width           =   975
          End
          Begin VB.TextBox txtMaxDoorX 
             Height          =   285
-            Left            =   2955
+            Left            =   2715
             TabIndex        =   133
-            Top             =   1680
+            Top             =   1200
             Width           =   975
          End
          Begin VB.TextBox txtMinDoorX 
             Height          =   285
-            Left            =   2955
+            Left            =   2715
             TabIndex        =   132
-            Top             =   1080
+            Top             =   600
             Width           =   975
          End
          Begin VB.CommandButton Command4 
@@ -149,28 +143,28 @@ Begin VB.Form frmWEDitorMain
             Height          =   375
             Left            =   360
             TabIndex        =   131
-            Top             =   3600
+            Top             =   4200
             Width           =   1575
          End
          Begin VB.TextBox txtDoorPolygonByteFlag 
             Height          =   285
             Left            =   720
             TabIndex        =   130
-            Top             =   3240
+            Top             =   3840
             Width           =   975
          End
          Begin VB.TextBox txtNumDoorPolygonVerticies 
             Height          =   285
             Left            =   360
             TabIndex        =   129
-            Top             =   2400
+            Top             =   2640
             Width           =   1695
          End
          Begin VB.TextBox txtFirstDoorPolygonVertex 
             Height          =   285
             Left            =   360
             TabIndex        =   128
-            Top             =   1800
+            Top             =   2040
             Width           =   1695
          End
          Begin VB.ComboBox cboClosedDoorPolygon 
@@ -190,33 +184,33 @@ Begin VB.Form frmWEDitorMain
          Begin VB.Label Label38 
             Caption         =   "Max Y"
             Height          =   255
-            Left            =   3180
+            Left            =   2940
             TabIndex        =   147
-            Top             =   2640
+            Top             =   2160
             Width           =   615
          End
          Begin VB.Label Label39 
             Caption         =   "Min Y"
             Height          =   255
-            Left            =   3180
+            Left            =   2940
             TabIndex        =   146
-            Top             =   2040
+            Top             =   1560
             Width           =   495
          End
          Begin VB.Label Label40 
             Caption         =   "Max X"
             Height          =   255
-            Left            =   3180
+            Left            =   2940
             TabIndex        =   145
-            Top             =   1440
+            Top             =   960
             Width           =   495
          End
          Begin VB.Label Label41 
             Caption         =   "Min X"
             Height          =   255
-            Left            =   3180
+            Left            =   2940
             TabIndex        =   144
-            Top             =   840
+            Top             =   360
             Width           =   495
          End
          Begin VB.Label Label42 
@@ -224,7 +218,7 @@ Begin VB.Form frmWEDitorMain
             Height          =   495
             Left            =   360
             TabIndex        =   143
-            Top             =   2760
+            Top             =   3000
             Width           =   1575
          End
          Begin VB.Label Label43 
@@ -232,7 +226,7 @@ Begin VB.Form frmWEDitorMain
             Height          =   255
             Left            =   360
             TabIndex        =   142
-            Top             =   2160
+            Top             =   2400
             Width           =   1455
          End
          Begin VB.Label Label44 
@@ -240,7 +234,7 @@ Begin VB.Form frmWEDitorMain
             Height          =   255
             Left            =   360
             TabIndex        =   141
-            Top             =   1560
+            Top             =   1800
             Width           =   1455
          End
          Begin VB.Label Label45 
@@ -264,7 +258,7 @@ Begin VB.Form frmWEDitorMain
          Height          =   1935
          Left            =   -74880
          TabIndex        =   117
-         Top             =   1380
+         Top             =   720
          Visible         =   0   'False
          Width           =   3495
          Begin VB.ComboBox cboWallGroup 
@@ -325,7 +319,7 @@ Begin VB.Form frmWEDitorMain
          Height          =   2175
          Left            =   -74880
          TabIndex        =   109
-         Top             =   1380
+         Top             =   720
          Visible         =   0   'False
          Width           =   3495
          Begin VB.CommandButton cmdUpdatePolygonIndex 
@@ -387,7 +381,7 @@ Begin VB.Form frmWEDitorMain
          Height          =   4215
          Left            =   -74880
          TabIndex        =   88
-         Top             =   1380
+         Top             =   720
          Visible         =   0   'False
          Width           =   3495
          Begin VB.ComboBox cboPolygon 
@@ -547,7 +541,7 @@ Begin VB.Form frmWEDitorMain
          Height          =   2175
          Left            =   -74880
          TabIndex        =   78
-         Top             =   1380
+         Top             =   720
          Visible         =   0   'False
          Width           =   3495
          Begin VB.CommandButton cmdUpdateVertex 
@@ -624,7 +618,7 @@ Begin VB.Form frmWEDitorMain
          Height          =   3855
          Left            =   -74880
          TabIndex        =   60
-         Top             =   1380
+         Top             =   720
          Visible         =   0   'False
          Width           =   3495
          Begin VB.ComboBox cboDoorNum 
@@ -761,7 +755,7 @@ Begin VB.Form frmWEDitorMain
          Height          =   2175
          Left            =   -74880
          TabIndex        =   50
-         Top             =   1380
+         Top             =   720
          Visible         =   0   'False
          Width           =   3495
          Begin VB.ComboBox cboOverlay 
@@ -839,7 +833,7 @@ Begin VB.Form frmWEDitorMain
          Height          =   2535
          Left            =   -74880
          TabIndex        =   40
-         Top             =   1380
+         Top             =   720
          Visible         =   0   'False
          Width           =   3375
          Begin VB.ComboBox cboOverlayTileIdicies 
@@ -916,9 +910,9 @@ Begin VB.Form frmWEDitorMain
       End
       Begin VB.Frame fraDoorTileIndicies 
          Height          =   2055
-         Left            =   -75000
+         Left            =   -74880
          TabIndex        =   32
-         Top             =   1380
+         Top             =   720
          Visible         =   0   'False
          Width           =   3375
          Begin VB.TextBox txtDoorTilemap 
@@ -978,9 +972,9 @@ Begin VB.Form frmWEDitorMain
       End
       Begin VB.Frame fraTilemap 
          Height          =   3615
-         Left            =   -74880
+         Left            =   120
          TabIndex        =   17
-         Top             =   1380
+         Top             =   720
          Visible         =   0   'False
          Width           =   3495
          Begin VB.TextBox txtStartTile 
@@ -1103,129 +1097,129 @@ Begin VB.Form frmWEDitorMain
    Begin VB.Label lblNumOpenPolys1 
       Caption         =   "Number of Open Door Polygons:"
       Height          =   375
-      Left            =   10080
+      Left            =   6000
       TabIndex        =   15
-      Top             =   8520
+      Top             =   4200
       Visible         =   0   'False
       Width           =   1215
    End
    Begin VB.Label lblNumOpenPolys2 
       Height          =   255
-      Left            =   10080
+      Left            =   6000
       TabIndex        =   14
-      Top             =   9000
+      Top             =   4680
       Width           =   735
    End
    Begin VB.Label lblClodedPoly1 
       Caption         =   "Number of Closed Door Polygons:"
       Height          =   375
-      Left            =   11400
+      Left            =   6000
       TabIndex        =   13
-      Top             =   8520
+      Top             =   5040
       Visible         =   0   'False
       Width           =   1335
    End
    Begin VB.Label lblClodedPoly2 
       Height          =   255
-      Left            =   11400
+      Left            =   6000
       TabIndex        =   12
-      Top             =   9000
+      Top             =   5520
       Width           =   735
    End
    Begin VB.Label lblNumPolygonIndicies1 
       Caption         =   "Number of Polygon Indicies:"
       Height          =   375
-      Left            =   8280
+      Left            =   6000
       TabIndex        =   11
-      Top             =   8520
+      Top             =   3360
       Visible         =   0   'False
       Width           =   1695
    End
    Begin VB.Label lblNumPolygonIndicies2 
       Height          =   255
-      Left            =   8280
+      Left            =   6000
       TabIndex        =   10
-      Top             =   9000
+      Top             =   3840
       Width           =   735
    End
    Begin VB.Label lblNumPolygons1 
       Caption         =   "Number of Polygons:"
       Height          =   255
-      Left            =   6600
+      Left            =   6000
       TabIndex        =   9
-      Top             =   8520
+      Top             =   2760
       Visible         =   0   'False
       Width           =   1575
    End
    Begin VB.Label lblNumPolygons2 
       Height          =   255
-      Left            =   6600
+      Left            =   6000
       TabIndex        =   8
-      Top             =   8760
+      Top             =   3000
       Width           =   735
    End
    Begin VB.Label lblNumVerticies1 
       Alignment       =   1  'Right Justify
       Caption         =   "Number of Verticies:"
       Height          =   255
-      Left            =   5040
+      Left            =   6000
       TabIndex        =   7
-      Top             =   8520
+      Top             =   2160
       Visible         =   0   'False
       Width           =   1455
    End
    Begin VB.Label lblNumVerticies2 
       Height          =   255
-      Left            =   5040
+      Left            =   6000
       TabIndex        =   6
-      Top             =   8760
+      Top             =   2400
       Width           =   735
    End
    Begin VB.Label lblNumDoorIndicies1 
       Caption         =   "Number of Door Indicies:"
       Height          =   255
-      Left            =   3120
+      Left            =   6000
       TabIndex        =   5
-      Top             =   8520
+      Top             =   1560
       Visible         =   0   'False
       Width           =   1815
    End
    Begin VB.Label lblNumDoorIndicies2 
       Height          =   255
-      Left            =   3120
+      Left            =   6000
       TabIndex        =   4
-      Top             =   8760
+      Top             =   1800
       Width           =   735
    End
    Begin VB.Label lblNumDoors1 
       Caption         =   "Number of Doors:"
       Height          =   255
-      Left            =   1680
+      Left            =   6000
       TabIndex        =   3
-      Top             =   8520
+      Top             =   960
       Visible         =   0   'False
       Width           =   1335
    End
    Begin VB.Label lblNumDoors2 
       Height          =   255
-      Left            =   1680
+      Left            =   6000
       TabIndex        =   2
-      Top             =   8760
+      Top             =   1200
       Width           =   735
    End
    Begin VB.Label lblNumOverlays2 
       Height          =   255
-      Left            =   120
+      Left            =   6000
       TabIndex        =   1
-      Top             =   8760
+      Top             =   600
       Width           =   735
    End
    Begin VB.Label lblNumOverlays1 
       Caption         =   "Number of Overlays:"
       Height          =   255
-      Left            =   120
+      Left            =   6000
       TabIndex        =   0
-      Top             =   8520
+      Top             =   360
       Visible         =   0   'False
       Width           =   1455
    End
